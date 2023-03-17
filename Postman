@@ -1,0 +1,370 @@
+_type: export
+__export_format: 4
+__export_date: 2023-03-17T21:21:20.870Z
+__export_source: insomnia.desktop.app:v2023.1.0
+resources:
+  - _id: req_3b3071b123844abcba314a52d2504268
+    parentId: fld_172b80bb73114818af981f7e4b0baf19
+    modified: 1678880658096
+    created: 1678875047899
+    url: http://localhost:3000/auth/signup
+    name: Signup
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"Valdo98",
+        	"email":"qwerty1234@gmail.com",
+        	"password":"12345678"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_776085478be54b65b55f0699551dff7e
+      - id: pair_fdc638518ee5482d85790d88ba0eea71
+        name: Authorization
+        value: PREFIX TOKEN
+        description: ""
+    authentication:
+      type: bearer
+      disabled: false
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY4ZTIzNGI5LTA4MWMtNDMyZC1hMDAyLWJmY2NjOTkxN2Q3OSIsIm5hbWUiOiJWYWxkbzk4IiwiZW1haWwiOiJxd2VydHkxMjM0QGdtYWlsLmNvbSIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMTVUMTE6NDM6MTkuNTcyWiIsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMTVUMTE6NDM6MTkuNTcyWiIsImlhdCI6MTY3ODg4MDU5OX0.OZ9njlNJvWLc8scu6LwZ8m8hHu7tkvqEtvmASHLa520eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY4ZTIzNGI5LTA4MWMtNDMyZC1hMDAyLWJmY2NjOTkxN2Q3OSIsIm5hbWUiOiJWYWxkbzk4IiwiZW1haWwiOiJxd2VydHkxMjM0QGdtYWlsLmNvbSIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMTVUMTE6NDM6MTkuNTcyWiIsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMTVUMTE6NDM6MTkuNTcyWiIsImlhdCI6MTY3ODg4MDU5OX0.OZ9njlNJvWLc8scu6LwZ8m8hHu7tkvqEtvmASHLa520
+      prefix: Bearer
+    metaSortKey: -1678878181179
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_172b80bb73114818af981f7e4b0baf19
+    parentId: fld_f8c017d463344d0f8229e9b59b6174e5
+    modified: 1678878181229
+    created: 1678878181229
+    name: Auth
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1678878181229
+    _type: request_group
+  - _id: fld_f8c017d463344d0f8229e9b59b6174e5
+    parentId: wrk_834fde7cab4241a48184c4ae0a33cdf2
+    modified: 1678878170086
+    created: 1678878170086
+    name: nestJS
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1678878170086
+    _type: request_group
+  - _id: wrk_834fde7cab4241a48184c4ae0a33cdf2
+    parentId: null
+    modified: 1678797021004
+    created: 1678797021004
+    name: New Document
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_7e7feef4cd4e46269a27de6ade5ec73d
+    parentId: fld_172b80bb73114818af981f7e4b0baf19
+    modified: 1678882095582
+    created: 1678879591888
+    url: http://localhost:3000/auth/login
+    name: Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - id: pair_f94c88e20f5d43e9954105f450c545f3
+          name: username
+          value: qwerty12345@gmail.com
+          description: ""
+        - id: pair_cc16f9468df34e2b877323cad0a85ca6
+          name: password
+          value: "12345678"
+          description: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_d829217f77dc431f915039e7ca85c2fa
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY4ZTIzNGI5LTA4MWMtNDMyZC1hMDAyLWJmY2NjOTkxN2Q3OSIsIm5hbWUiOiJWYWxkbzk4IiwiZW1haWwiOiJxd2VydHkxMjM0QGdtYWlsLmNvbSIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMTVUMTE6NDM6MTkuNTcyWiIsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMTVUMTE6NDM6MTkuNTcyWiIsImlhdCI6MTY3ODg4MDU5OX0.OZ9njlNJvWLc8scu6LwZ8m8hHu7tkvqEtvmASHLa520eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY4ZTIzNGI5LTA4MWMtNDMyZC1hMDAyLWJmY2NjOTkxN2Q3OSIsIm5hbWUiOiJWYWxkbzk4IiwiZW1haWwiOiJxd2VydHkxMjM0QGdtYWlsLmNvbSIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMTVUMTE6NDM6MTkuNTcyWiIsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMTVUMTE6NDM6MTkuNTcyWiIsImlhdCI6MTY3ODg4MDU5OX0.OZ9njlNJvWLc8scu6LwZ8m8hHu7tkvqEtvmASHLa520
+      prefix: Bearer
+      disabled: true
+    metaSortKey: -1678878181129
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_91a3483e09ba44e1a070eb903f034997
+    parentId: fld_33cef52995194f36b9502c981b7863b3
+    modified: 1678893208957
+    created: 1678797021011
+    url: http://localhost:3000/users
+    name: CreateUser
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"sdf45",
+        	"email":"tyu@hjkl.com",
+        	"password":"567"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1678878189075.024
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_33cef52995194f36b9502c981b7863b3
+    parentId: fld_f8c017d463344d0f8229e9b59b6174e5
+    modified: 1678878189226
+    created: 1678878189226
+    name: User
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1678878189226
+    _type: request_group
+  - _id: req_257e868fe12141c0ae79f07d7140dd09
+    parentId: fld_33cef52995194f36b9502c981b7863b3
+    modified: 1678878281917
+    created: 1678859488347
+    url: http://localhost:3000/users/{% request 'parameter', 'id', 0 %}
+    name: DeleteUser
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters:
+      - id: pair_3d1f7961297c4acbadeb53712453acbe
+        name: id
+        value: tyu@hjkl.com
+        description: ""
+        disabled: true
+      - id: pair_094defeba6414cfc9afea9c05e5d23d4
+        name: ""
+        value: ""
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_f89e32b510ea46029c4556836ac61f64
+    authentication: {}
+    metaSortKey: -1678878189025.024
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0477efab7b1745e0a55450d9873dc7bb
+    parentId: fld_33cef52995194f36b9502c981b7863b3
+    modified: 1678878279080
+    created: 1678860288282
+    url: http://localhost:3000/users
+    name: GetUsers
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1678878189125.024
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7b219577769043eaa6e1bcb321daa161
+    parentId: fld_33cef52995194f36b9502c981b7863b3
+    modified: 1678878277599
+    created: 1678860678544
+    url: http://localhost:3000/users/{% request 'parameter', 'id', 0 %}
+    name: GetUserByEmail
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - id: pair_413eb9374e264713ad6841e2858aed52
+        name: id
+        value: tyu@hjkl.com
+        description: ""
+        disabled: true
+      - id: pair_4ad59f96caa4412f88fac6a7fdb9cd17
+        name: ""
+        value: ""
+        description: ""
+    headers: []
+    authentication: {}
+    metaSortKey: -1678878189175.024
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_913b4277482247abb035143a2497e970
+    parentId: fld_33cef52995194f36b9502c981b7863b3
+    modified: 1679087870053
+    created: 1678861377875
+    url: http://localhost:3000/users/
+    name: UpdateUserName
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"Valdo1"
+        }
+    parameters:
+      - id: pair_d5a86551ac2647d49590b227501b1ab0
+        name: id
+        value: tyu@hjkl.com
+        description: ""
+        disabled: true
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1678878189225.024
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8e394372339b403bb047f8c073f6d677
+    parentId: fld_38cc6f5203d14ca3875ab48b1e0f64c1
+    modified: 1679087901954
+    created: 1678878605655
+    url: http://localhost:3000/posts
+    name: CreatePost
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title":"ererer",
+        	"body":"eruyiwseuryweiuryiu"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_77d474685f6d4a16b7df24b5599dda86
+      - id: pair_6d8e640ba9ee45218f2b4c03645d0599
+        name: Authorization
+        value: PREFIX TOKEN
+        description: ""
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQzNjNmNDllLTIwNDYtNGFlNi1iMTM3LWVkYmEwNDhlM2E3ZiIsIm5hbWUiOiJWYWxkbzk4IiwiZW1haWwiOiJxd2VydHkxMjM0NUBnbWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIzLTAzLTE1VDEyOjAzOjA2LjgzNFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTAzLTE1VDEyOjAzOjA2LjgzNFoiLCJpYXQiOjE2Nzg4ODIwOTZ9.XpqjOI2gdmK44iN4SE9eneABoSIYcPh7e5YyTklmrtY
+      disabled: false
+      prefix: Bearer
+    metaSortKey: -1678878605655
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_38cc6f5203d14ca3875ab48b1e0f64c1
+    parentId: fld_f8c017d463344d0f8229e9b59b6174e5
+    modified: 1678878206108
+    created: 1678878206108
+    name: Post
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1678878206108
+    _type: request_group
+  - _id: req_e828f0861f8b4eb2ba6db8724ec49644
+    parentId: fld_38cc6f5203d14ca3875ab48b1e0f64c1
+    modified: 1679087929163
+    created: 1679087908137
+    url: http://localhost:3000/posts
+    name: GetAllPosts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1679087908137
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_7a93b49d2c815ea6db43a0d7ffaf3aad9fb1b7ef
+    parentId: wrk_834fde7cab4241a48184c4ae0a33cdf2
+    modified: 1678797021008
+    created: 1678797021008
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1678797021008
+    _type: environment
+  - _id: jar_7a93b49d2c815ea6db43a0d7ffaf3aad9fb1b7ef
+    parentId: wrk_834fde7cab4241a48184c4ae0a33cdf2
+    modified: 1678797021009
+    created: 1678797021009
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_e3f42f7908a04c0a824f5a003b0888ff
+    parentId: wrk_834fde7cab4241a48184c4ae0a33cdf2
+    modified: 1679087852131
+    created: 1678797021005
+    fileName: New Document
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_3ebb193ced734b6985a3c86b3248c01d
+    parentId: wrk_834fde7cab4241a48184c4ae0a33cdf2
+    modified: 1678797021012
+    created: 1678797021012
+    name: Example Test Suite
+    _type: unit_test_suite
